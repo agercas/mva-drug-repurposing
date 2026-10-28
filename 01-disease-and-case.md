@@ -26,10 +26,11 @@ BubR1 has further reported roles at the kinetochore (the protein structure where
 | Transcript change | NM_001211.6:c.2210T>G | NM_001211.6:c.3006T>G |
 | Protein change | p.Leu737Ter (stop-gain, exon 17 of 23) | p.Asn1002Lys (missense, last exon, kinase domain) |
 | Expected effect | Nonsense-mediated decay (NMD, degradation of transcripts with premature stop signals) | Altered protein; effect unmeasured |
+| ACMG class (Track 1 report) | Likely pathogenic | Uncertain significance (1 point, from the rarity criterion; at most 3 with any single predictor) |
 | ClinVar (read 2026-10-24) | 533901: pathogenic or likely pathogenic for MVA1; criteria provided, multiple submitters, no conflicts | Not recorded for this nucleotide change; 4600147 (c.3006T>A, same protein change) is a variant of uncertain significance with criteria provided and a single submitter |
 | gnomAD v4 (Genome Aggregation Database; read 2026-10-24) | 115 of 1,461,846 exome alleles (7.9e-05) and 5 of 152,174 genome alleles | 1 of 1,461,878 exome alleles; absent from genomes |
 
-These are the only two protein-altering variants called in the gene (2 of 14 variants called in the gene change the protein; Track 1 repository, `results/crosscheck.txt`). Short-read data identify each variant but leave open which copy of chromosome 15 carries it (phase), so the report treats them as compound heterozygous (a different change on each copy of the gene), which is consistent with recessive disease. The Track 1 report documents the identification and the exon-depth check that excludes exon-scale deletions.
+These are the only two protein-altering variants called in the gene (2 of 14 variants called in the gene change the protein; Track 1 repository, `results/crosscheck.txt`). Short-read data identify each variant but leave open which copy of chromosome 15 carries it (phase), so the report treats them as compound heterozygous (a different change on each copy of the gene), which is consistent with recessive disease. If both variants lay on one copy, *BUB1B* would explain the condition only if the other copy carried a change that these data do not show (Track 1 report, section 6.2); the Track 1 report rates its confidence in allele 2 as moderate. The Track 1 report documents the identification and the exon-depth check that excludes exon-scale deletions.
 
 ## 1.4 Mechanism characterisation
 
@@ -56,7 +57,7 @@ The data provider supplied eight terms from the Human Phenotype Ontology (HPO, a
 
 Besides the *BUB1B* stop-gain, the Track 1 analysis found five heterozygous variants (one copy of the gene affected) with good read support: one secondary finding, listed in the Track 1 report, and four carrier-state variants (a single damaged copy of a recessive gene) in genes unrelated to *BUB1B*. Counting the stop-gain, the Track 1 report lists six such variants in all (sections 4.4 and 7).
 
-Each candidate card in [Approved drugs](03-approved-drugs/README.md) and [Non-approved therapies](04-non-approved-therapies/README.md) records a pass or fail on whether the candidate's known effects bear on genes carrying such variants. The report gives the four carrier-state variants as a count and as these per-candidate results; anyone holding the child's genome can check any candidate against all variants in it.
+Each candidate card in [Approved drugs](03-approved-drugs/README.md) and [Non-approved therapies](04-non-approved-therapies/README.md) records the status of the check, which is pending for every candidate, on whether the candidate's known effects bear on genes carrying such variants. The report gives the four carrier-state variants as a count and a per-candidate status line; anyone holding the child's genome can check any candidate against all variants in it.
 
 ## 1.7 Unmeasured quantities that bear on every candidate
 

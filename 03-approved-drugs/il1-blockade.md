@@ -6,7 +6,7 @@ Anakinra is a recombinant interleukin-1 (IL-1) receptor antagonist given by dail
 
 ## Hypothesis
 
-Aneuploid cells in a senescence-like state (a lasting growth arrest controlled by p53, a tumour-suppressor protein) secrete IL-1 alpha, which drives interleukin-6 (IL-6) and interleukin-8 (IL-8) secretion through nuclear factor kappa B (NF-kB). This inflammatory secretome (the signalling proteins the cells release) may contribute to marrow, appetite and muscle features. Blocking IL-1 would lower the secretome and leave senescent cells alive and interferon signalling unchanged.
+Aneuploid cells in a senescence-like state (a lasting growth arrest controlled by p53, a tumour-suppressor protein) secrete interleukin-6 (IL-6) and interleukin-8 (IL-8); in senescent fibroblasts, IL-1 alpha acts upstream of that secretion, through nuclear factor kappa B (NF-kB). This inflammatory secretome (the signalling proteins the cells release) may contribute to features of the syndrome; no inflammatory feature of MVA is established. Blocking IL-1 would lower the secretome and leave senescent cells alive and interferon signalling unchanged.
 
 Each row of the table is one causal step, with a basis label defined in the [section 3 README](README.md#basis-labels): Demonstrated, Suggested, Our inference or Speculation.
 
@@ -17,8 +17,8 @@ Each row of the table is one causal step, with a basis label defined in the [sec
 | 3 | BubR1-deficient or MVA cells carry this IL-1 programme | Speculation | None; the secretome is unmeasured in MVA. Early-passage Bub1b hypomorph mouse fibroblasts raised CCL2 and no other cytokine tested, and the mild IL1B rise in public BUB1B-depleted RPE1 data lies within perturbation noise | PMID [28633018](https://pubmed.ncbi.nlm.nih.gov/28633018/) (Figure 7C) |
 | 4 | IL-1 alpha is the upstream switch of the IL-6 and IL-8 secretome | Suggested | Senescent human fibroblasts in culture; antagonist, neutralising antibody and knockdown each lowered IL-6 and IL-8; abstract read | PMID [19805069](https://pubmed.ncbi.nlm.nih.gov/19805069/) |
 | 5 | Blocking IL-1 lowers IL-6 and IL-8 in the child's cells | Our inference | Extrapolates step 4 from fibroblasts, assuming step 3 holds | PMID [19805069](https://pubmed.ncbi.nlm.nih.gov/19805069/) |
-| 6 | Lower IL-6 and IL-8 improve marrow, appetite or muscle features | Speculation | None in MVA; adult canakinumab trials give an anaemia association in a clonal-haematopoiesis subset and an exploratory lung-cancer signal | PMID [37934948](https://pubmed.ncbi.nlm.nih.gov/37934948/); PMID [28855077](https://pubmed.ncbi.nlm.nih.gov/28855077/) |
-| 7 | IL-1 blockade leaves immune clearance of aneuploid cells intact | Speculation | Untested; the natural-killer clearance paper tests NF-kB and reports no IL-1 experiment (full text searched for IL-1 terms) | PMID [34105235](https://pubmed.ncbi.nlm.nih.gov/34105235/) |
+| 6 | Lower IL-6 and IL-8 improve a syndrome feature driven by that signalling (none is established in MVA) | Speculation | None in MVA; adult canakinumab trials give an anaemia association in a clonal-haematopoiesis subset and an exploratory lung-cancer signal | PMID [37934948](https://pubmed.ncbi.nlm.nih.gov/37934948/); PMID [28855077](https://pubmed.ncbi.nlm.nih.gov/28855077/) |
+| 7 | IL-1 blockade leaves immune clearance of aneuploid cells intact | Speculation | Untested; the natural-killer clearance paper tests NF-kB and reports no IL-1 blockade or other IL-1 manipulation; IL1B mRNA is among the NF-kB targets it finds raised in the arrested aneuploid cells (Figure 4; full text read) | PMID [34105235](https://pubmed.ncbi.nlm.nih.gov/34105235/) |
 
 Basis: 1 step Demonstrated, 2 Suggested, 1 Our inference, 3 Speculation.
 
@@ -28,7 +28,7 @@ Basis: 1 step Demonstrated, 2 Suggested, 1 Our inference, 3 Speculation.
 
 - **Paediatric exposure:** in 16 NOMID patients on a median 3 mg/kg once daily for 3.5 years, steady-state peak serum concentration had a median of 3,628 ng/mL (range 655 to 8,511) and the 24-hour trough 203 ng/mL (range 53 to 1,979) (Kineret label, section 12.3).
 
-- **Tissue reach:** the label reports serum concentrations only, so marrow, growth-plate and muscle levels are unreported (Speculation).
+- **Tissue reach:** the label reports serum concentrations only, so tissue levels are unreported (Speculation).
 
 - **Clearance and formulation:** the kidney clears the agent, and the label adjusts the dosing interval in severe renal insufficiency. The label states that the prefilled syringe has a 20 mg minimum dose, a delivery limit in small children.
 
@@ -60,9 +60,9 @@ Basis: 1 step Demonstrated, 2 Suggested, 1 Our inference, 3 Speculation.
 
 - IL-1 blockade carries infection risk. The label advises against live vaccines and active infection and cautions against combination with tumour necrosis factor (TNF) blockers. It reports neutropenia (0.4% of rheumatoid arthritis patients in placebo-controlled studies; 2 of 43 NOMID patients) and states that the effect on malignancy "is not known" (Kineret label).
 
-- The chain from secretome to marrow, appetite and muscle features rests on data from outside MVA, from two research areas: senescent fibroblast culture and adult cardiovascular trials.
+- The chain from secretome to clinical features of the syndrome rests on data from outside MVA, from two research areas: senescent fibroblast culture and adult cardiovascular trials.
 
-- NAD+ (nicotinamide adenine dinucleotide) metabolism raises the same secretome in senescent fibroblasts (PMID [30778219](https://pubmed.ncbi.nlm.nih.gov/30778219/)), so this candidate and the [NAD+ precursors](nad-precursors.md) pull in opposite directions.
+- NAD+ (nicotinamide adenine dinucleotide) metabolism raises the same secretome in senescent fibroblasts (PMID [30778219](https://pubmed.ncbi.nlm.nih.gov/30778219/)), and NMN supplementation enhanced it in oncogene-induced senescent fibroblasts and raised IL1B, IL6 and IL8 mRNA in one mouse model (same paper), so in those systems this candidate and the [NAD+ precursors](nad-precursors.md) pull in opposite directions; neither has been tested in MVA cells.
 
 ## Safety
 
@@ -74,7 +74,7 @@ The gates are defined in [Screening criteria](README.md#screening-criteria).
 
 - Gate 4 is a flag: a different IL-1 agent, canakinumab, reduced lung cancer incidence in an exploratory analysis in adults, canakinumab treatment trials in established lung cancer were negative, and the anakinra label states that the effect on malignancy is not known.
 
-- Gates 5 and 6 are flags: daily injection, infection risk, renal clearance, and neutropenia reported on the label, in a child with marrow risk.
+- Gates 5 and 6 are flags: daily injection, infection risk, renal clearance, and neutropenia reported on the label, in a child with a chromosome-instability syndrome.
 
 - Check against the child's other genetic findings (the secondary finding and the four carrier-state variants, [section 1.6](../01-disease-and-case.md)): pending, gene by gene ([section 3 README](README.md#check-against-the-childs-other-genetic-findings)).
 
@@ -86,7 +86,7 @@ The magnitude of this projection is unmodelled, because the secretome is unmeasu
 
 - **Expected to stay unchanged:** aneuploid cells, BubR1 level and the rate of chromosome missegregation (Our inference: its pharmacology acts outside chromosome segregation).
 
-- **Size of benefit:** any feature-level benefit (marrow, appetite, muscle) is of unknown size (Speculation). The human effect sizes found are anaemia and lung-cancer incidence in adult trials of a different IL-1 agent (Suggested: association and exploratory analysis).
+- **Size of benefit:** any feature-level benefit is of unknown size (Speculation). The human effect sizes found are anaemia and lung-cancer incidence in adult trials of a different IL-1 agent (Suggested: association and exploratory analysis).
 
 - **Dependence:** the projection depends on one unmeasured quantity, the IL-1 alpha and beta, IL-6 and IL-8 level in the child's cells or plasma against age-matched controls.
 

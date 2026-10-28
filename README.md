@@ -2,7 +2,7 @@
 
 **"Rare Disease, Real Kid" MVA Hackathon 2026**
 
-This report proposes testable hypotheses for a child with mosaic variegated aneuploidy (MVA), a recessive condition in which cells carry varying numbers of chromosomes. Two variants in *BUB1B*, the gene for the spindle checkpoint protein BubR1, cause the condition in this child. Every hypothesis names a mechanism, the evidence for and against it, and the experiment that would confirm or stop it. The hypotheses are for confirmation in an accredited laboratory, and clinical decisions rest with the treating team ([disclaimer](07-disclaimer-and-ai-use.md)).
+This report proposes testable hypotheses for a child with mosaic variegated aneuploidy (MVA), a recessive condition in which cells carry varying numbers of chromosomes. Two variants in *BUB1B*, the gene for the spindle checkpoint protein BubR1, are the proposed cause of the condition in this child: a stop-gain (likely pathogenic) and a missense change (a variant of uncertain significance). Which copy of the gene carries each is undetermined, and the report treats them as compound heterozygous. Every hypothesis names a mechanism, the evidence for and against it, and the experiment that would confirm or stop it. The hypotheses are for confirmation in an accredited laboratory, and clinical decisions rest with the treating team ([disclaimer](07-disclaimer-and-ai-use.md)).
 
 ## Workstreams
 
@@ -13,7 +13,7 @@ This report proposes testable hypotheses for a child with mosaic variegated aneu
 
 ## Inclusion rule
 
-A candidate has a card when four conditions hold: its mechanism chain starts from the two variants; it passes the safety screen in section 3; at least one step of the chain has a result in a related disease or a model system; and a cell-based assay with a written stopping criterion can falsify it. The appendix assesses alternative approaches to the candidates in sections 3 and 4.
+A candidate has a card when four conditions hold: its mechanism chain starts from the two variants; its safety-screen flags (section 3) are recorded on the card; at least one step of the chain has a result in a related disease or a model system; and a cell-based assay with a written stopping criterion can falsify it. Gates 1 and 2 disqualify a candidate in the screen as written. Where a card records a flag at those gates (the N-acetylcysteine card, and both section 4 routes), the report states the flag and keeps the candidate as a hypothesis for laboratory test without arguing the flag away; both section 4 routes also have an open gate 4 (cancer direction). The appendix assesses alternative approaches to the candidates in sections 3 and 4.
 
 ## No lead candidate
 

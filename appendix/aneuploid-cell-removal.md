@@ -1,6 +1,6 @@
 # Removal or replacement of aneuploid cells
 
-A strategy that finds cells with the wrong chromosome number (aneuploid cells) and destroys them cannot work for random aneuploidy at the detection accuracy now achievable. An agent that destroys every detected cell needs a false-positive rate near 1.4 × 10⁻⁵ per chromosome-arm test, and every detector built or modelled here falls short on sensitivity and specificity at once. Replacement of cells works without per-cell discrimination and remains open.
+A strategy that finds cells with the wrong chromosome number (aneuploid cells) and destroys them is unlikely to work for random aneuploidy at the detection accuracy now achievable. At a 1% aneuploid fraction, an agent that destroys every detected cell needs a false-positive rate near 1.4 × 10⁻⁵ per chromosome-arm test; the allowed rate rises steeply with the aneuploid fraction, and the one published control rate found is above the budget at every fraction up to about 42%, which covers the 13.6% in the patient cited here and the more than 25% that the [disease overview](../01-disease-and-case.md), citing a mouse-model paper, describes as typical for MVA. Every detector built or modelled here falls short on sensitivity and specificity at once. Replacement of cells works without per-cell discrimination and remains open.
 
 ## Trisomy-field tools
 
@@ -27,13 +27,13 @@ Every dosage correction built for trisomy 21 (a third copy of chromosome 21) ass
 
 3. **Reference point.** A published analysis of blood single-cell RNA data labelled 4.0% of control cells "clean aneuploid" under stringent thresholds, against 13.6% in a patient with biallelic *MAD1L1* variants (a damaging change on both gene copies; PMID [36322655](https://pubmed.ncbi.nlm.nih.gov/36322655/); full text read, Methods). 
 
-   The calls come from inferCNV, a program that infers copy-number changes from RNA expression. The 4.0% is 71 times the per-cell budget (0.040 / 5.6 × 10⁻⁴). Spread over 39 arm tests it is about 1.0 × 10⁻³ per test, also about 70 times the per-test budget. As a false-positive rate it is an upper bound, because some control cells may be truly aneuploid.
+   The calls come from inferCNV, a program that infers copy-number changes from RNA expression. At f = 1% the 4.0% is 71 times the per-cell budget (0.040 / 5.6 × 10⁻⁴). Spread over 39 arm tests it is about 1.0 × 10⁻³ per test, also about 70 times the per-test budget at that fraction. As a false-positive rate it is an upper bound, because some control cells may be truly aneuploid.
 
 4. **Chromosome-agnostic stress signatures** (this report's analysis of public data, with decoy signatures as controls) performed near chance across the same panel (area under the curve of 0.5 is chance): 0.522 for integrated stress, 0.531 for heat shock, 0.522 for type-I interferon and 0.539 for a mitotic-instability proxy, each inside its decoy distribution. The p53 signature scores below chance (0.377).
 
 5. **Tissue model** (this report's simulation under an assumed noise model). At six buildable operating points, the ratio of the removal rate of healthy cells to that of aneuploid cells is 0.17, 0.18, 1.06, 1.08, 1.10 and 1.43. Four remove healthy cells at least as fast as aneuploid cells. The two below 1 reach true-positive rates of 0.060 and 0.056 against 0.5 required. An imperfect detector enriches tissue for the cells it was built to remove.
 
-The 1.4 × 10⁻⁵ per-arm bound applies unchanged to any detector for any mosaic disease and can be applied before a detector is built.
+The 1.4 × 10⁻⁵ per-arm bound is the value at a 1% aneuploid fraction, 50% sensitivity and 90% precision. The allowed rate scales with f / (1 − f), where f is the aneuploid fraction: it is 0.5 × f × (1/0.9 − 1) / (1 − f) per cell, which is 6.2 × 10⁻³ per cell (1.6 × 10⁻⁴ per arm test) at f = 10% and 8.7 × 10⁻³ per cell (2.2 × 10⁻⁴ per arm test) at f = 13.6%, the called fraction in the *MAD1L1* patient of item 3 (called by inferCNV; if the 4.0% called in controls were all false positives and every truly aneuploid cell were called, the true fraction would be about 10%). At f = 13.6% the 4.0% control rate is about 4.6 times the per-cell budget, not 71 times. At f = 25% the budget is 1.9 × 10⁻² per cell (4.8 × 10⁻⁴ per arm test) and the 4.0% rate is about 2.2 times it; the two are equal at f of about 42%. The bound can be applied before a detector is built, with the aneuploid fraction of the disease in question.
 
 ## Antibodies
 
